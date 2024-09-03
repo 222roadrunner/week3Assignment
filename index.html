@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 3 Bootstrap</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+
+</head>
+
+<body style="margin: 3rem; background-color: rgb(255, 246, 233);">
+    
+    <div class="text-center">
+        <h1 class="display-3">Home</h1>
+        <p class="fs-4">This is website 1.2.0 and will follow the concept of the first one, but be formatted differently.</p>
+        <hr>
+    </div>
+    
+    <!--Navbar, collapses when window is small and button appears that opens nav menu-->
+    <nav class="navbar navbar-expand-sm bg-body-secondary rounded">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navigation</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="voting.html">Voting</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      </nav>
+
+    <!--Container for all subheader content, text column and photo column-->
+    <div class="container-fluid" style="margin-top: 1rem; border: solid 0px black;">
+        <div class="row">   
+            
+                <div class="col-md-6" style="border: solid 0px black;">
+                    <p class="fs-4">The requirements are as follows:</p>
+                    <ul class="fs-5">
+                        <li>It must be a new website created with HTML and Bootstrap</li>
+                        <li>It must have at least 2 pages</li>
+                        <li>It must have a navbar, table, and form</li>
+                        <li>Grid for formatting</li>
+                        <li>Elements must stack vertically when the window is small</li>
+                    </ul>
+                    <hr>
+                    <ul class="fs-5">
+                        <li>This website follows the same concept as the first one I made</li>
+                        <li>There will be a series of images and a form which promts the user to submit a vote for their favorite</li>
+                        <li>The images are different and subject to change</li>
+                    </ul>
+                </div>
+            
+            
+            <div class="col-md-6" style="border: solid 0px black;">
+                <img src="IMG_0195.JPG" class="img-fluid" alt="Prague Castle">
+                <p class="text-center" style="margin-top: 8px;">Prague Castle in Prague, Czechia</p>
+            </div>
+        </div>    
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 3 Bootstrap</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+
+</head>
+
+<body style="margin: 3rem; background-color: rgb(255, 246, 233);">
+    
+    <div class="text-center">
+        <h1 class="display-3">Voting</h1>
+        <p class="fs-4">Vote here for your favorite image! You may only vote for the images on the Gallery page.</p>
+        <hr>
+    </div>
+    
+    <nav class="navbar navbar-expand-sm bg-body-secondary rounded">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navigation</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Voting</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      </nav>
+    
+    <!--Text form & checkbox form-->  
+    <form>
+        <div class="row mt-3 mb-3">
+          <label for="inputFirstName" class="col-md-2 col-form-label">First Name</label>
+          <div class="col-md-10">
+            <input type="firstName" class="form-control" id="inputFirstName">
+          </div>
+        </div>
+        
+        <div class="row mb-3">
+          <label for="inputLastName" class="col-md-2 col-form-label">Last Name</label>
+          <div class="col-md-10">
+            <input type="lastName" class="form-control" id="inputLastName">
+          </div>
+        </div>
+        
+        <div class="row mb-3">
+            <label for="inputEmail" class="col-md-2 col-form-label">Email</label>
+            <div class="col-md-10">
+              <input type="email" class="form-control" id="inputEmail">
+            </div>
+        </div>
+        
+        <div class="container-fluid">
+            <div class="row mb-3">
+            <div class="col-md-6 mb-3" style="border: solid 0px black">
+                <h5>Favorite Image</h5>
+                
+                <div>
+                <input class="vote-check-input" type="radio" name="gridRadiosV" id="gridRadios1" value="option1" >
+                <label class="vote-check-label" for="gridRadios1">1: Oak Creek Canyon, Sedona, AZ</label>
+                </div>
+
+                <div>
+                <input class="vote-check-input" type="radio" name="gridRadiosV" id="gridRadios2" value="option2" >
+                <label class="vote-check-label" for="gridRadios2">2: Crap apartment, Phoenix, AZ</label>
+                </div>
+
+                <div>
+                <input class="vote-check-input" type="radio" name="gridRadiosV" id="gridRadios3" value="option3" >
+                <label class="vote-check-label" for="gridRadios3">3: Meteor Crater, Winslow, AZ</label>
+                </div>
+
+            </div>
+            
+            <!--gridRadios named differently so there can be a selection in each column-->
+            <div class="col-md-6" style="border: solid 0px black"> 
+                <h5>Desired Prize</h5>
+                
+                <div>
+                <input class="prize-check-input" type="radio" name="gridRadiosP" id="gridRadios4" value="option4" >
+                <label class="prize-check-label" for="gridRadios4">Two left shoes</label>
+                </div>
+
+                <div>
+                <input class="prize-check-input" type="radio" name="gridRadiosP" id="gridRadios5" value="option5" >
+                <label class="prize-check-label" for="gridRadios5">Glasses with one lens</label>
+                </div>
+
+                <div>
+                <input class="prize-check-input" type="radio" name="gridRadiosP" id="gridRadios6" value="option6" >
+                <label class="prize-check-label" for="gridRadios6">Reverse crop top (all bottom no top)</label>
+                </div>
+
+            </div>
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-info">Submit Vote</button>
+    </form>
+
+    </div>
+</body>
+</html>
